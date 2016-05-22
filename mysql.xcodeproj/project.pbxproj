@@ -209,6 +209,13 @@
 		D874E7C81CF20CDF004EA94D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"HEADER_SEARCH_PATHS[arch=*]" = "/usr/local/mysql-5.7.12-osx10.11-x86_64/include/**";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/usr/local/mysql-5.7.12-osx10.11-x86_64/lib";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lmysqlclient",
+					"-lm",
+					"-lz",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
